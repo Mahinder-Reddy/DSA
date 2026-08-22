@@ -10,9 +10,6 @@ class Solution {
             n/=10;
         }
         int divisor=sum+product;
-        if(num%divisor==0){
-            return true;
-        }
-        return false;
+        return num % (sum + product) == 0;
     }
 }
